@@ -1,0 +1,55 @@
+<!-- Rizal Whisnu -->
+<!-- TI-2B -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cafe Rooftop Flamingo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src='jquery-3.5.1.js'></script>
+	<script>
+		var i=0;
+		$(document).ready(function(){
+			$('#slider img').hide();
+			showNextImage();
+			setInterval('showNextImage()', 3000);
+		});
+		
+		function showNextImage(){
+			i++;
+			$('#sliderImage' + i).appendTo('#slider').fadeIn(1100).delay(1100).fadeOut(1100);
+			if(i==4){
+				i=0;
+			}
+		};
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Profile</h1>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="biodata.html">About Me</a></li>
+				<li class="active"><a href="profil.html">Cafe Rooftop Flamingo Profile</a></li>
+				<li><a href="transaksi.html">Transaction</a></li>
+			</ul>	
+		</div>
+	</header>
+	<div class="gambar">
+		<div>Kafe Rooftop jadi tempat yang paling banyak dipilih untuk sekadar nongkrong sambil ngemil. Cafe Rooftop Flamingo hadir dengan suguhan pemandangan kaki langit Tulungagung.
+			Mungkin kafe rooftop sudah banyak ditemukan di berbagai tempat. Yang sedang ramai ada kafe rooftop yang dikenal bernama Cafe Rooftop Flamingo. Cafe Rooftop Flamingo menawarkan sensasi makan di atas ketinggian beratap langit.
+			Lokasinya berada di lantai 8 hotel Crown Victoria yang berada di kawasan Tamanan, Tulungagung. Sambil menikmati makanan, di kafe rooftop itu kamu bisa melihat pemandangan gedung bertingkat yang ada di Tulungagung.
+			Mengunjungi kafe ini enaknya saat sore hari, karena bisa sambil melihat menikmati matahari terbenam yang perlahan sirna cahayanya. Disini kita bisa mendapatkan kesempatan menikmati keindahan senja di sore hari.
+			Disaat Malam hari berada di Cafe Rooftop Flamingo memberikan kesan romantis, sehingga tempat ini cocok dijadikan sebagai tempat berkencan untuk pasangan yang sedang memadu kasih. Apalagi ada bonus berupa hiasan gemerlap lampu-lampu dari gedung-gedung bertingkat yang mengelilingi kafe.</div>
+		<div id="slider">
+			<img id="sliderImage1" src="img/Cafe.jpg">
+				
+			<img id="sliderImage2" src="img/Gambar1.jpg">
+
+			<img id="sliderImage3" src="img/Gambar2.jpg">
+
+			<img id="sliderImage4" src="img/Gambar3.jpg">
+		</div>		
+	</div>
+</body>
+</html>

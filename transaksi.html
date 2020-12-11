@@ -1,0 +1,67 @@
+<!-- Rizal Whisnu -->
+<!-- TI-2B -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transaction</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src='jquery-3.5.1.js'></script>
+	<script>
+		var makanan =["Donat Mix", "Chicken Burger", "Spaghetti Carbonara", "Pizza Papperoni", "Sirloin Steak"]
+		var minuman = ["Red Velvet Latte", "Americano", "Espresso", "Matcha Latte", "Thai Tea", "Cappucino"]
+		function transaksi(){
+			var diskon=0;
+			var id = document.getElementsByTagName('var1').value;
+			var nama = document.getElementsByTagName('var2').value;
+			var makanan = document.getElementById('makanan').value;
+			var minuman = document.getElementById('minuman').value;
+			var jumlah = document.getElementById('jumlah')
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h1>Transaction</h1>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="biodata.html">About Me</a></li>
+				<li><a href="profil.html">Cafe Rooftop Flamingo</a></li>
+				<li class="active"><a href="transaksi.html">Transaction</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="form">
+		<p>ID pembeli</p>
+		<input type="text" name="var1">
+		<p><br>Nama Pembeli</p>
+		<input type="text" name="var2">
+		<p><br>Status Pembeli</p>
+			<input type="radio" id="status" name="status" value="Member" required>Member<br>
+			<input type="radio" id="status" name="status" value="Non-Member" required>Non-Member<br>
+		<br>
+			<label for="makanan">Pilih Makanan</label><br>
+			<select id="makanan" name="makanan">
+				<option>Donat Mix : Rp40000,-</option>
+				<option>Chicken Burger : Rp55000,-</option>
+				<option>Spaghetti Carbonara : Rp55000,-</option>
+				<option>Pizza Papperoni : Rp95000,-</option>
+				<option>Sirloin Steak : Rp100000</option>
+			</select><br><br>
+			<label id="jumlah">Jumlah</label><br>
+				<input type="number" name="number"><br><br>
+			<label for="minuman">Pilih Minuman</label><br>
+			<select id="minuman" name="minuman">
+				<option>Red Velvet Latte : Rp38000,-</option>
+				<option>Americano : Rp28000,-</option>
+				<option>Espresso : Rp24000,-</option>
+				<option>Matcha Latte : Rp38000,-</option>
+				<option>Thai Tea : Rp38000,-</option>
+				<option>Cappucino : Rp36000,-</option>
+			</select><br><br>
+			<label id="jumlah">Jumlah</label><br>
+				<input type="number" name="number"><br><br>
+				<button>Submit</button>
+	</div>
+</body>
+</html>
